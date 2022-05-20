@@ -10,6 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @description :线程池实验
  * @version :V 1.0
  */
+@SuppressWarnings("all")
 public class ThreadPoolExperiment {
     private static AtomicInteger countCreatedNumber = new AtomicInteger(0);
     public static void main(String[] args) {

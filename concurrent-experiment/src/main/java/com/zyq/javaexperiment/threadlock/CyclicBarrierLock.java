@@ -11,6 +11,7 @@ import java.util.concurrent.CyclicBarrier;
  * @description :栅栏锁
  * @version :V 1.0
  */
+@SuppressWarnings("all")
 public class CyclicBarrierLock {
 
     CyclicBarrier cyclicBarrier = new CyclicBarrier(5);

@@ -2,9 +2,9 @@
 
 #### 概述
 
-> CyclicBarrier 也叫栅栏锁，可以用于多线程协调。
-> CyclicBarrier 主要使用 ReentrantLock, Condition 实现核心方法在 dowait()
->
+> 一种同步辅助工具，允许一组线程都等待彼此到达一个共同的障碍点。cyclicbarrier在涉及固定大小的线程组的程序中很有用，
+> 这些线程有时必须相互等待。该屏障被称为循环屏障，因为它可以在等待的线程释放后重新使用。 
+> 并且CyclicBarrier支持一个可选的 Runnable命令，该命令在参与方中的最后一个线程到达后执行，且在释放任何线程之前执行
 
 #### 用法详解
 
@@ -98,3 +98,6 @@ public class CyclicBarrier{
     }
 }
 ```
+#### 总结
+- CyclicBarrier 用于分解线程协调，使用reentrantLock实现， 具备reentrantLock 特性，协调部分使用condition实现
+- CyclicBarrier 和 CountDownLatch 功能有相同之处

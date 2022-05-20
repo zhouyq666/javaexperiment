@@ -9,6 +9,7 @@ import java.util.concurrent.*;
  * @description :线程池
  * @version :V 1.0
  */
+@SuppressWarnings("all")
 public class ZyqThreadPoolExecutor extends ThreadPoolExecutor {
 
     public ZyqThreadPoolExecutor() {
